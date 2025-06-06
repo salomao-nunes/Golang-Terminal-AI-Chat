@@ -25,8 +25,6 @@ func loadEnv() string {
 func main() {
 	GEMINI_API_KEY := loadEnv()
 
-	inputUser := userInput()
-
 	ctx := context.Background()
 	client, err := genai.NewClient(ctx, option.WithAPIKey(GEMINI_API_KEY))
 	if err != nil {
@@ -35,13 +33,15 @@ func main() {
 	defer client.Close()
 
 	model := client.GenerativeModel("gemini-1.5-flash")
+	for {
+		response, err := model.GenerateContent(ctx, genai.Text(userInput()))
+		if err != nil {
+			log.Fatal(err)
+		}
 
-	response, err := model.GenerateContent(ctx, genai.Text(inputUser))
-	if err != nil {
-		log.Fatal(err)
+		printResponse(response)
+
 	}
-
-	printResponse(response)
 }
 
 func userInput() string {
@@ -57,6 +57,7 @@ func printResponse(resp *genai.GenerateContentResponse) {
 			for _, part := range cand.Content.Parts {
 				pterm.DefaultBasicText.Println(pterm.LightBlue("AI: "), part)
 				// fmt.Println(part)
+				// pterm.DefaultBox.WithRightPadding(1).WithLeftPadding(1).WithTopPadding(2).WithBottomPadding(2).Println(pterm.LightBlue("AI: "), part)
 			}
 		}
 	}
