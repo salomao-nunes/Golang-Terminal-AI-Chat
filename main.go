@@ -45,7 +45,8 @@ func main() {
 }
 
 func userInput() string {
-	result, _ := pterm.DefaultInteractiveTextInput.Show()
+	result, _ := pterm.DefaultInteractiveTextInput.Show(pterm.Magenta("Me"))
+	fmt.Println()
 
 	return result
 }
@@ -54,9 +55,9 @@ func printResponse(resp *genai.GenerateContentResponse) {
 	for _, cand := range resp.Candidates {
 		if cand.Content != nil {
 			for _, part := range cand.Content.Parts {
-				fmt.Println(part)
+				pterm.DefaultBasicText.Println(pterm.LightBlue("AI: "), part)
+				// fmt.Println(part)
 			}
 		}
 	}
-	fmt.Println("---")
 }
