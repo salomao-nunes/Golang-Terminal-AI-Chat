@@ -5,6 +5,7 @@ import (
 	"fmt"
 	"log"
 	"os"
+	"time"
 
 	"github.com/google/generative-ai-go/genai"
 	"github.com/joho/godotenv"
@@ -38,6 +39,9 @@ func main() {
 		if err != nil {
 			log.Fatal(err)
 		}
+		spinnerSuccess, _ := pterm.DefaultSpinner.Start("Processing input... (will succeed)")
+		time.Sleep(time.Second * 2) // Simulate 3 seconds of processing something.
+		spinnerSuccess.Success()
 
 		printResponse(response)
 
